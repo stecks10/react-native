@@ -1,15 +1,16 @@
 module.exports = {
   env: {
-    es2021: true,
+    es6: true,
   },
   extends: [
-    'plugin:react/recommended',
     'airbnb',
+    'prettier',
     'prettier/react'
   ],
   globals: {
     Atomic: 'readonly',
     SharedArrayBuffer: 'readonly',
+    __DEV__: 'readonly',
   },
   paser: 'babel-eslint',
   parserOptions: {
